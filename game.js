@@ -30,11 +30,15 @@ function check(){
         console.log("Correct");
         document.getElementById('input_checkbox').style.display = "none";
         document.getElementById('input_checkbox').innerHTML = "Correct";
+            document.getElementById("correct").style.display = "inline-block";
+        document.getElementById("correct").innerHTML = "Correct!"
         player1_score_updated = player1_score + 1;
         document.getElementById("player1_score").innerHTML = player1_score_updated;
         }
         else
         {
+             document.getElementById("correct").style.display = "inline-block";
+        document.getElementById("correct").innerHTML = "Correct!"
         player2_score_updated = player2_score + 1;
         document.getElementById("player2_score").innerHTML = player2_score_updated;
         }
@@ -44,6 +48,8 @@ function check(){
         console.log("Wrong");
         document.getElementById('input_checkbox').style.display = "none";
         document.getElementById('input_checkbox').innerHTML = "Wrong! Try Again";
+        document.getElementById("correct").style.display = "inline-block";
+        document.getElementById("correct").innerHTML = "Wrong!"
     }
 
     if (question_turn == "Player_1")
